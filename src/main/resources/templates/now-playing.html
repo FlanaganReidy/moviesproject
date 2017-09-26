@@ -7,6 +7,7 @@
 <body>
 <div>
     <div th:each = "movie : ${movieList}">
+        <h4 th:text = "${movie.title}"></h4>
     <img width="150px" th:src= "@{${'http://image.tmdb.org/t/p/original' + movie.poster_path}}" />
     </div>
 </div>
