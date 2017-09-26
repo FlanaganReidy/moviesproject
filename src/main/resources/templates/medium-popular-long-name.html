@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>medium popular long name</title>
+</head>
+<body>
+<div>
+    <div th:each = "movie : ${movieList}">
+        <img width="150px" th:src= "@{${'http://image.tmdb.org/t/p/original' + movie.poster_path}}" />
+    </div>
+</div>
+</body>
+</html>
